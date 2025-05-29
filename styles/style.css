@@ -13,4 +13,8 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--Inter-Variable);
+  font-variation-settings: 'wght' 400;
+  font-size: 18px;
+  line-height: 1.2;
 }
