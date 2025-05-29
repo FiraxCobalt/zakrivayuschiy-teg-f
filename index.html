@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
   <body class="page">
-    <header class="header content-section">
+    <header class="header page__header content-section">
       <h1 class="header__title">&lt;/HTML&gt;</h1>
       <p class="header__subtitle">закрывающий тег</p>
     </header>
-    <main>
+    <main class="page__main">
       <section class="cards">
         <ul class="cards__list">
           <li class="cards__item content-section">
@@ -42,13 +42,12 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <button class="footer__button">
-        <svg class="floppy" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 40 40">
-          <use href="./svg/floppy.svg#floppy"></use>
+      <button class="floppy-button page__floppy-button">
+        <svg class="floppy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 28">
+          <use href="./svg/floppy.svg#floppy" />
         </svg>
+        <span class="button__text">Сохранить на память</span>
       </button>
-    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

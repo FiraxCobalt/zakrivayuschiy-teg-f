@@ -12,12 +12,18 @@
 
 .page {
   padding-block-start: 100px;
+  padding-block-end: 103px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--Inter-Variable);
   font-variation-settings: 'wght' 400;
   font-size: 18px;
   line-height: 1.2;
+}
+
+.content-section {
+  margin: 0 auto; 
+  inline-size: var(--content-section-width);
 }
 
 .header {
@@ -29,9 +35,8 @@
   min-block-size: 323px;
 }
 
-.content-section {
-  margin: 0 auto; 
-  inline-size: var(--content-section-width);
+.page__header {
+  margin-block-end: 100px;
 }
 
 .header__title {
@@ -44,6 +49,10 @@
   font-family: var(--PressStart2P);
   font-size: var(--header-text-font-size);
   text-transform: uppercase;
+}
+
+.page__main {
+  margin-block-end: 52px;
 }
 
 .card {
@@ -93,8 +102,30 @@
   align-items: center;
   inline-size: 130px;
   min-block-size: 38px;
+}
+
+.button__text {
   font-family: var(--PressStart2P);
   font-size: 14px;
   line-height: 0.9;
   text-align: center;
+}
+
+.floppy-button {
+  display: block;
+  border: 2px solid var(--color-1);
+  padding: 15px 19px;
+  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  min-block-size: clamp(5rem, 5.5502rem + -2.3474vw, 3.4375rem);
+}
+
+.page__floppy-button {
+  margin: 0 auto;
+}
+
+.floppy {
+  margin: 0 auto;
+  display: block;
+  inline-size: var(--floppy-icon-size);
+  block-size: var(--floppy-icon-size);
 }
