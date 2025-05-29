@@ -3,9 +3,13 @@
 :root {
     --Inter-Variable: 'Inter-Variable', Arial, sans-serif;
     --PressStart2P: 'PressStart2P', Arial, sans-serif;
-    --header-title-font-weight: 700;
-    --header-text-font-weight: 400;
     --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     --header-text-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --card-title-font-weight: 'wght' 700;
+    --card-text-font-weight: 'wght' 400;
     --content-section-width: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.5rem);
+    --card-image-size: clamp(23.1875rem, 16.1232rem + 30.1408vw, 43.25rem);
+    --card-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
+    --color-1: #000;
+    --color-2: #fff;
 }
