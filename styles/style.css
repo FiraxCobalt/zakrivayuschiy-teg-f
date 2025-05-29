@@ -11,10 +11,37 @@
 */
 
 .page {
+  padding-block-start: 100px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--Inter-Variable);
   font-variation-settings: 'wght' 400;
   font-size: 18px;
   line-height: 1.2;
+}
+
+.header {
+  border: 2px solid #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 323px;
+}
+
+.content-section {
+  margin: 0 auto; 
+  inline-size: var(--content-section-width);
+}
+
+.header__title {
+  margin-bottom: 20px;
+  font-family: var(--PressStart2P);
+  font-size: var(--header-title-font-size);
+}
+
+.header__subtitle {
+  font-family: var(--PressStart2P);
+  font-size: var(--header-text-font-size);
+  text-transform: uppercase;
 }
