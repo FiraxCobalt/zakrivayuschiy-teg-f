@@ -31,7 +31,7 @@
 
 .header {
   border: 2px solid #000000;
-  padding-block: clamp(7.3125rem, 7.0704rem + 1.0329vw, 8rem);
+  padding-block: clamp(7.375rem, 7.265rem + 0.4695vw, 7.6875rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,7 +41,7 @@
 }
 
 .page__header {
-  margin-block-end: 101px;
+  margin-block-end: 99px;
 }
 
 .header__title {
@@ -58,8 +58,8 @@
   text-align: center;
 }
 
-.page__main {
-  margin-block-end: 52px;
+.cards {
+  margin-block-end: 48px;
 }
 
 .cards__item:not(:last-child) {
@@ -76,7 +76,7 @@
   padding: 5px 10px;
   font-variation-settings: var(--card-title-font-weight);
   font-size: 18px;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .card__image-container {
@@ -86,7 +86,6 @@
 .card__image {
   display: block;
   inline-size: var(--card-image-size);
-  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
 }
@@ -142,12 +141,16 @@
 }
 
 .card__text-content {
-  margin-block-end: 22px;
+  margin-block-end: 27px;
   border-block-start: 2px solid var(--color-1);
   padding: 25px 25px 0;
   display: flex;
   flex-direction: column;
-  gap: 25px
+  gap: 26px;
+}
+
+.card__text {
+  line-height: 1.16;
 }
 
 .card__buttons {
@@ -158,7 +161,7 @@
 }
 
 .card__icon-button {
-  margin-inline-end: 9px;
+  margin-inline-end: 4px;
   border: 2px solid transparent;
   block-size: 38px;
   transition: border 0.3s ease;
@@ -293,7 +296,7 @@
   display: block;
   border: 2px solid var(--color-1);
   background-color: var(--color-2);
-  padding: 15px 18px;
+  padding: 13px 18px;
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   min-block-size: clamp(5rem, 5.5502rem + -2.3474vw, 3.4375rem);
 }
@@ -303,7 +306,7 @@
 }
 
 .floppy {
-  margin: 0 auto;
+  margin: 0 auto 6px;
   display: block;
   inline-size: var(--floppy-icon-size);
   block-size: var(--floppy-icon-size);
@@ -357,4 +360,23 @@
   text-align: center;
   text-transform: uppercase;
   mix-blend-mode: difference;
+}
+
+@media (width >= 1440px) {
+  .floppy-button {
+    padding: 15px 17px;
+    display: flex;
+    align-items: center;
+    inline-size: 335px;
+    min-block-size: 51px;
+  }
+
+  .floppy {
+    inline-size: 21px;
+    block-size: 21px;
+  }
+
+  .floppy-button__floppy {
+    margin: 0 9px 0 0;
+  }
 }
