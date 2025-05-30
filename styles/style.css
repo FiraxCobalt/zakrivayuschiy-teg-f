@@ -55,6 +55,10 @@
   margin-block-end: 52px;
 }
 
+.cards__item:not(:last-child) {
+  margin-block-end: 50px;
+}
+
 .card {
   border: 2px solid var(--color-1);
 }
@@ -85,6 +89,7 @@
   inset-inline-end: 13px;
   font-family: var(--PressStart2P);
   line-height: 1;
+  font-size: 14px;
   text-shadow: -1px 0 var(--color-2),
   1px 0 var(--color-2),
   0 1px var(--color-2),
