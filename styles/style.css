@@ -163,7 +163,7 @@
 
 .floppy-modal {
   border: 2px solid var(--color-1);
-  padding: 30px 42px;
+  padding: 30px 37px;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   min-block-size: 191px;
 }
@@ -172,19 +172,15 @@
   display: grid;
   grid-template-columns: 39px 1fr;
   grid-template-rows: repeat(2, auto);  
+  gap: 30px 20px;
 }
 
-/* .floppy-modal__content {
-  display: grid;
-  grid-template-columns: 39px 1fr;
-  grid-template-rows: repeat(2, auto);  
-} */
-
-.floppy-modal__container {
-  display: flex;
+.floppy-modal::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .floppy-modal__icon {
+  align-self: center;
   inline-size: 39px;
   block-size: 39px;
 }
@@ -198,6 +194,16 @@
 
 .floppy-modal__button-close {
   border: 2px solid var(--color-1);
+  padding-block-start: 4px;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
+}
+
+.floppy-modal__button-text {
+  min-block-size: 38px;
+  font-family: var(--PressStart2P);
+  font-size: 14px;
+  line-height: 0.9;
+  text-align: center;
+  text-transform: uppercase;
 }
