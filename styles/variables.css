@@ -11,6 +11,7 @@
     --card-image-size: clamp(23.1875rem, 16.1232rem + 30.1408vw, 43.25rem);
     --card-size: clamp(23.1875rem, 16.0352rem + 30.5164vw, 43.5rem);
     --floppy-icon-size: clamp(1.75rem, 1.904rem + -0.6573vw, 1.3125rem);
+    --background-gradient: repeating-linear-gradient(to right,#d3d3d3, #d3d3d3 2px, transparent 2px 4px), repeating-linear-gradient(to bottom, #d3d3d3, #d3d3d3 2px, transparent 2px 4px), linear-gradient(to bottom, #e7e7e7, #1a1a1a);
     --color-1: #000;
     --color-2: #fff;
 }

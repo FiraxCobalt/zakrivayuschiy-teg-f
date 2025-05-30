@@ -19,6 +19,9 @@
   font-variation-settings: 'wght' 400;
   font-size: 18px;
   line-height: 1.2;
+  background-image: var(--background-gradient); 
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .content-section {
@@ -33,6 +36,7 @@
   justify-content: center;
   align-items: center;
   min-block-size: 323px;
+  background-color: var(--color-2);
 }
 
 .page__header {
@@ -61,6 +65,7 @@
 
 .card {
   border: 2px solid var(--color-1);
+  background-color: var(--color-2);
 }
 
 .card__title {
@@ -145,6 +150,7 @@
 .floppy-button {
   display: block;
   border: 2px solid var(--color-1);
+  background-color: var(--color-2);
   padding: 15px 18px;
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   min-block-size: clamp(5rem, 5.5502rem + -2.3474vw, 3.4375rem);
