@@ -31,6 +31,7 @@
 
 .header {
   border: 2px solid #000000;
+  padding-block: clamp(7.3125rem, 7.0704rem + 1.0329vw, 8rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,19 +41,21 @@
 }
 
 .page__header {
-  margin-block-end: 100px;
+  margin-block-end: 101px;
 }
 
 .header__title {
-  margin-bottom: 20px;
+  margin-block-end: 12px;
   font-family: var(--PressStart2P);
   font-size: var(--header-title-font-size);
+  text-align: center;
 }
 
 .header__subtitle {
   font-family: var(--PressStart2P);
   font-size: var(--header-text-font-size);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .page__main {
@@ -69,11 +72,11 @@
 }
 
 .card__title {
-  padding: 4px 10px;
-  inline-size: 90%;
+  border-block-end: 2px solid var(--color-1);
+  padding: 5px 10px;
   font-variation-settings: var(--card-title-font-weight);
   font-size: 18px;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 .card__image-container {
@@ -86,6 +89,34 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+}
+
+.card__image_filter-grayscale {
+  filter: grayscale(70%);
+}
+
+.card__image_filter-saturate {
+  filter: saturate(280%);
+}
+
+.card__image_filter-multiple {
+  filter: contrast(100%) hue-rotate(30deg) saturate(100%);
+}
+
+.card__image_filter-invert {
+  filter: invert(80%);
+}
+
+.card__image_filter-sepia {
+  filter: sepia(90%);
+}
+
+.card__image_filter-blur {
+   filter: blur(10px);
+}
+
+.card__image_filter-hue-rotate {
+  filter: hue-rotate(90deg) blur(1.5px) contrast(65%);
 }
 
 .card__image-label {
@@ -111,11 +142,12 @@
 }
 
 .card__text-content {
-  margin-block-end: 25px;
+  margin-block-end: 22px;
+  border-block-start: 2px solid var(--color-1);
   padding: 25px 25px 0;
   display: flex;
   flex-direction: column;
-  gap: 27px;
+  gap: 25px
 }
 
 .card__buttons {
@@ -126,7 +158,7 @@
 }
 
 .card__icon-button {
-  margin-inline-end: 5px;  
+  margin-inline-end: 9px;
   border: 2px solid transparent;
   block-size: 38px;
   transition: border 0.3s ease;
