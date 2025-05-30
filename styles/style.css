@@ -144,6 +144,10 @@
   block-size: 33px;
 }
 
+.sparks {
+  opacity: 0;
+}
+
 .card__like-button {
   border: 2px solid var(--color-1);
   padding: 10px 25px;
