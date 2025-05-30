@@ -67,11 +67,37 @@
   line-height: 1;
 }
 
+.card__image-container {
+  position: relative;
+}
+
 .card__image {
+  display: block;
   inline-size: var(--card-image-size);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center;
+}
+
+.card__image-label {
+  position: absolute;
+  inset-block-start: 25px;
+  inset-inline-end: 13px;
+  font-family: var(--PressStart2P);
+  line-height: 1;
+  text-shadow: -1px 0 var(--color-2),
+  1px 0 var(--color-2),
+  0 1px var(--color-2),
+  0 -1px var(--color-2);
+  mix-blend-mode: hard-light;
+  opacity: 50%;
+}
+
+@supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
+  .card__image-label {
+    -webkit-text-stroke: 1px var(--color-2);
+    text-shadow: none;
+  }
 }
 
 .card__text-content {
