@@ -141,7 +141,22 @@
 }
 
 .button {
+  position: relative;
+  overflow: hidden;
   transition: box-shadow 0.3s ease;
+  color: var(--color-2);
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  background-color: var(--color-1);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
 }
 
 .button:focus {
@@ -152,11 +167,18 @@
   box-shadow: 2px 2px 0 0 var(--color-1);
 }
 
+.button:hover::before {
+  transform: translateX(0);
+}
+
 .button__text {
   font-family: var(--PressStart2P);
+  position: relative;
+  z-index: 1;
   font-size: 14px;
   line-height: 0.9;
   text-align: center;
+  mix-blend-mode: difference;
 }
 
 .floppy-button {
@@ -177,6 +199,8 @@
   display: block;
   inline-size: var(--floppy-icon-size);
   block-size: var(--floppy-icon-size);
+  mix-blend-mode: difference;
+  color: var(--color-2);
 }
 
 .floppy-modal {
@@ -224,4 +248,5 @@
   line-height: 0.9;
   text-align: center;
   text-transform: uppercase;
+  mix-blend-mode: difference;
 }
