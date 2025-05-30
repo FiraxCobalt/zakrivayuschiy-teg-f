@@ -192,12 +192,24 @@
         </ul>
       </section>
     </main>
-      <button class="floppy-button page__floppy-button">
+      <button class="floppy-button page__floppy-button" onclick="window['floppy-modal'].showModal()">
         <svg class="floppy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 28">
           <use href="./svg/floppy.svg#floppy" />
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
+       <dialog class="floppy-modal" id="floppy-modal">
+        <div class="floppy-modal__container">
+          <svg class="floppy-modal__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39">
+            <use href="./svg/floppy-modal.svg#floppy-modal" />
+          </svg>
+          <p class="floppy-modal__text">Вставьте
+дискету, чтобы продолжить</p>
+        </div>
+        <button class="button floppy-modal__button-close" onclick="window['floppy-modal'].close()">
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

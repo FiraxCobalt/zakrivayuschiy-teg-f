@@ -160,3 +160,44 @@
   inline-size: var(--floppy-icon-size);
   block-size: var(--floppy-icon-size);
 }
+
+.floppy-modal {
+  border: 2px solid var(--color-1);
+  padding: 30px 42px;
+  inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
+  min-block-size: 191px;
+}
+
+.floppy-modal[open] {
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  grid-template-rows: repeat(2, auto);  
+}
+
+/* .floppy-modal__content {
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  grid-template-rows: repeat(2, auto);  
+} */
+
+.floppy-modal__container {
+  display: flex;
+}
+
+.floppy-modal__icon {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.floppy-modal__text {
+  font-family: var(--PressStart2P);
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.floppy-modal__button-close {
+  border: 2px solid var(--color-1);
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
