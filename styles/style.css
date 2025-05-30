@@ -145,7 +145,7 @@
 .floppy-button {
   display: block;
   border: 2px solid var(--color-1);
-  padding: 15px 19px;
+  padding: 15px 18px;
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   min-block-size: clamp(5rem, 5.5502rem + -2.3474vw, 3.4375rem);
 }
