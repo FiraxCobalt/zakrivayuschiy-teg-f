@@ -15,7 +15,7 @@
   padding-block-end: 103px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--Inter-Variable);
+  font-family: var(--main-font);
   font-variation-settings: 'wght' 400;
   font-size: 18px;
   line-height: 1.2;
@@ -36,7 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-2);
+  background-color: var(--color-secondary);
 }
 
 .page__header {
@@ -66,12 +66,12 @@
 }
 
 .card {
-  border: 2px solid var(--color-1);
-  background-color: var(--color-2);
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 .card__title {
-  border-block-end: 2px solid var(--color-1);
+  border-block-end: 2px solid var(--color-primary);
   padding: 5px 10px;
   font-variation-settings: var(--card-title-font-weight);
   font-size: 18px;
@@ -124,24 +124,24 @@
   font-family: var(--PressStart2P);
   line-height: 1;
   font-size: 14px;
-  text-shadow: -1px 0 var(--color-2),
-  1px 0 var(--color-2),
-  0 1px var(--color-2),
-  0 -1px var(--color-2);
+  text-shadow: -1px 0 var(--color-secondary),
+  1px 0 var(--color-secondary),
+  0 1px var(--color-secondary),
+  0 -1px var(--color-secondary);
   mix-blend-mode: hard-light;
   opacity: 50%;
 }
 
 @supports (text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff) {
   .card__image-label {
-    -webkit-text-stroke: 1px var(--color-2);
+    -webkit-text-stroke: 1px var(--color-secondary);
     text-shadow: none;
   }
 }
 
 .card__text-content {
   margin-block-end: 27px;
-  border-block-start: 2px solid var(--color-1);
+  border-block-start: 2px solid var(--color-primary);
   padding: 25px 25px 0;
   display: flex;
   flex-direction: column;
@@ -171,7 +171,7 @@
 }
 
 .card__icon-button:focus-visible {
-  border-color: var(--color-1);
+  border-color: var(--color-primary);
 }
 
 .like-icon {
@@ -246,7 +246,7 @@
 }
 
 .card__like-button {
-  border: 2px solid var(--color-1);
+  border: 2px solid var(--color-primary);
   padding: 10px 25px;
   display: flex;
   justify-content: center;
@@ -259,7 +259,7 @@
   position: relative;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
-  color: var(--color-2);
+  color: var(--color-secondary);
 }
 
 .button::before {
@@ -269,7 +269,7 @@
   display: block;
   inline-size: 100%;
   block-size: 100%;
-  background-color: var(--color-1);
+  background-color: var(--color-primary);
   transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
 }
@@ -279,7 +279,7 @@
 }
 
 .button:focus-visible {
-  box-shadow: 2px 2px 0 0 var(--color-1);
+  box-shadow: 2px 2px 0 0 var(--color-primary);
 }
 
 .button:hover::before {
@@ -298,8 +298,8 @@
 
 .floppy-button {
   display: block;
-  border: 2px solid var(--color-1);
-  background-color: var(--color-2);
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-secondary);
   padding: 13px 18px;
   inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   min-block-size: clamp(5rem, 5.5502rem + -2.3474vw, 3.4375rem);
@@ -315,11 +315,11 @@
   inline-size: var(--floppy-icon-size);
   block-size: var(--floppy-icon-size);
   mix-blend-mode: difference;
-  color: var(--color-2);
+  color: var(--color-secondary);
 }
 
 .floppy-modal {
-  border: 2px solid var(--color-1);
+  border: 2px solid var(--color-primary);
   padding: 30px 37px;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   min-block-size: 191px;
@@ -350,7 +350,7 @@
 }
 
 .floppy-modal__button-close {
-  border: 2px solid var(--color-1);
+  border: 2px solid var(--color-primary);
   padding-block-start: 4px;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
