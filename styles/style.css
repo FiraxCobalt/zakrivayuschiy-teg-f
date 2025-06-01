@@ -120,7 +120,7 @@
 .card__image-label {
   position: absolute;
   inset-block-start: 25px;
-  inset-inline-end: 13px;
+   inset-inline-end: 23px;
   font-family: var(--PressStart2P);
   line-height: 1;
   font-size: 14px;
@@ -322,7 +322,6 @@
   border: 2px solid var(--color-primary);
   padding: 30px 37px;
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
-  min-block-size: 191px;
 }
 
 .floppy-modal[open] {
