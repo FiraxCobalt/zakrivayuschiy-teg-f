@@ -119,8 +119,8 @@
 
 .card__image-label {
   position: absolute;
-  inset-block-start: 25px;
-   inset-inline-end: 23px;
+  inset-block-start: 26px;
+    inset-inline-end: 23px;
   font-family: var(--PressStart2P);
   line-height: 1;
   font-size: 14px;
@@ -350,7 +350,7 @@
 
 .floppy-modal__button-close {
   border: 2px solid var(--color-primary);
-  padding-block-start: 4px;
+  padding: 7px 0 6px;
   grid-column: 1 / -1;
   grid-row: 2 / 3;
 }
@@ -363,6 +363,13 @@
   text-align: center;
   text-transform: uppercase;
   mix-blend-mode: difference;
+}
+
+@media (width <= 375px) {
+  .card__image-label {
+    inset-block-start: 23px;
+    inset-inline-end: 11px;
+  }
 }
 
 @media (width >= 1440px) {
